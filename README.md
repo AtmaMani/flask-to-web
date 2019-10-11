@@ -17,6 +17,9 @@ origin	git@github.com:heroku/python-getting-started.git (fetch)
 origin	git@github.com:heroku/python-getting-started.git (push)
 (flask) python-getting-started (master) $ 
 ```
+This name is seen in the URL of the app. So, if you 
+want to customize the name, use `heroku apps:create <name>`
+
 5. Now push this repo to Heroku remote using Git `git push heroku master`. This triggers 
 a build process on the remote. Requirements are installed
 
