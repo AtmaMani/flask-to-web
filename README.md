@@ -63,3 +63,11 @@ dedicated dynos, upgrade the account to professional.
 Heroku relies on `requirements.txt` file for Python apps and this is 
 run when the app is created. All cascading deps will be
 installed.
+
+## Local development
+Going forward, you need to create a local dev replica. You can do so by creating a new
+conda env, running `pip install -r requirements.txt`, once ready, run `heroku local web`
+which runs the env locally, but not with containers.
+
+You can push your changes to your remote. If you push to `heroku` remote, then 
+the app gets updated and restarted
