@@ -107,3 +107,6 @@ __pycache__
 .idea/
 .idea/*
 .idea
+.DS_STORE
+.uploads/
+uploads
