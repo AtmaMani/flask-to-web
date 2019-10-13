@@ -75,7 +75,7 @@ the app gets updated and restarted
 ### Helpful references
 1. [https://coderwall.com/p/pstm1w/deploying-a-flask-app-at-heroku](https://coderwall.com/p/pstm1w/deploying-a-flask-app-at-heroku)
 2. [flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/)
-3. 
+3. [flask - uploading files](https://flask.palletsprojects.com/en/1.1.x/patterns/fileuploads/)
 
 # Log from pushing this app to Heroku
 ```cmd
