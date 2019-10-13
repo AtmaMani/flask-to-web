@@ -1,5 +1,6 @@
 # flask-to-web
-Project to experiment with deploying a simple web app on the web.
+<img width="440" alt="Screen Shot 2019-10-13 at 3 45 27 PM" src="https://user-images.githubusercontent.com/6750179/66723659-8c0aa880-edd0-11e9-8352-6e3319065fb0.png">
+Project to experiment with deploying a simple web app on the web using `flask`, `gunicorn` and hosted by `heroku`. Flask makes it very easy to build a REST API. Gunicorn makes it very easy to build a production scale server. Heroku makes it trivial to run a web app, on-demand on the web.
 
 ## Deploy steps
 Initial steps from [Heroku Python help page](https://devcenter.heroku.com/articles/getting-started-with-python)
