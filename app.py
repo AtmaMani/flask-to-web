@@ -110,9 +110,10 @@ def uploaded_file(filename):
 
 
 # region define file lister resource
-@app.route('/uploads')
+@app.route('/uploads', methods=['GET'])
 def get_file_list():
-    file_list = os.listdir(UPLOAD_FOLDER)
+    # file_list = os.listdir(UPLOAD_FOLDER)
+    file_list = os.listdir(app.config['UPLOAD_FOLDER'])
     return json.dumps(file_list)
 # endregion
 
