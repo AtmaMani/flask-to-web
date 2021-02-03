@@ -1,5 +1,6 @@
 import os
 import requests
+import json
 
 # NASA API auth
 from roti_rot import rot13
@@ -64,6 +65,7 @@ def index_page():
                            media_url=media_url)
 # endregion
 
+
 # region define file upload resource
 @app.route('/fileUpload', methods=['GET', 'POST'])
 def upload_file():
@@ -98,12 +100,22 @@ def upload_file():
     '''
 # endregion
 
+
 # region define file download resource
-@app.route('/uploads/<filename>')
+@app.route('/uploads/<filename>', methods=['GET'])
 def uploaded_file(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'],
                                filename)
 # endregion
+
+
+# region define file lister resource
+@app.route('/uploads')
+def get_file_list():
+    file_list = os.listdir(UPLOAD_FOLDER)
+    return json.dumps(file_list)
+# endregion
+
 
 if __name__ == '__main__':
     app.run()
